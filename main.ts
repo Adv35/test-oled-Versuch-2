@@ -1,3 +1,4 @@
+OLED12864_I2C.on()
 for (let index = 0; index < 4; index++) {
     OLED12864_I2C.init(60)
     OLED12864_I2C.showNumber(
@@ -16,6 +17,15 @@ for (let index = 0; index < 4; index++) {
     basic.pause(1000)
     OLED12864_I2C.clear()
 }
+OLED12864_I2C.rect(
+0,
+0,
+60,
+30,
+1
+)
+basic.pause(1000)
+OLED12864_I2C.clear()
 OLED12864_I2C.showString(
 0,
 0,
@@ -34,6 +44,7 @@ OLED12864_I2C.showString(
 " cool!",
 0
 )
+OLED12864_I2C.off()
 basic.forever(function () {
 	
 })
