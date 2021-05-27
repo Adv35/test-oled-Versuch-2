@@ -24,26 +24,40 @@ OLED12864_I2C.rect(
 30,
 1
 )
-basic.pause(1000)
-OLED12864_I2C.clear()
 OLED12864_I2C.showString(
-0,
-0,
+1,
+1,
 "Advik",
 1
 )
 OLED12864_I2C.showString(
-0,
 1,
+2,
 "ist",
 1
 )
 OLED12864_I2C.showString(
-0,
-2,
+1,
+3,
 " cool!",
 0
 )
+basic.pause(5000)
+OLED12864_I2C.clear()
+OLED12864_I2C.vline(
+0,
+0,
+40,
+1
+)
+OLED12864_I2C.hline(
+0,
+0,
+60,
+1
+)
+basic.pause(500)
+OLED12864_I2C.clear()
 OLED12864_I2C.off()
 basic.forever(function () {
 	
