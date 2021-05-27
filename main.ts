@@ -1,6 +1,7 @@
 OLED12864_I2C.on()
+OLED12864_I2C.init(60)
+OLED12864_I2C.zoom(false)
 for (let index = 0; index < 4; index++) {
-    OLED12864_I2C.init(60)
     OLED12864_I2C.showNumber(
     0,
     0,
